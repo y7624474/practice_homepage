@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 .idea
-/.bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -10,7 +9,6 @@
 /log/*
 !/log/.keep
 /tmp
-=======
 *.gem
 *.rbc
 /.config
@@ -46,4 +44,4 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
->>>>>>> 51e4a6461f396097b654e331ad89eaa9c41cd58e
+
