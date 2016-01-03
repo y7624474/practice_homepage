@@ -1,0 +1,30 @@
+<%= form_for :listing, url: listings_path do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :describe %><br>
+      <%= f.text_area :describe %>
+    </p>
+
+    <p>
+      <%= f.label :address %><br>
+      <%= f.text_area :address %>
+    </p>
+
+    <p>
+      <%= f.label :beds %><br>
+      <%= f.text_area :beds %>
+    </p>
+
+    <p>
+      <%= f.label :rooms %><br>
+      <%= f.text_area :rooms %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

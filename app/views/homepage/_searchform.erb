@@ -1,0 +1,144 @@
+<%= form_for :listings, url: homepage_index_path,  method: :post, class: 'search-form' do %>
+
+    <div class="search-form-container">
+      <h1 class="centered">Search properties for sale</h1>
+
+      <div class="search-container">
+        <div class="search-line">
+          <%= text_field_tag :search_text, params[:search_text],class:'input', placeholder:"Search properties for sale by state, suburb or postcode" %>
+          <div class="clear-text-container">
+            <a class="icon-cross" title="Clear text" style="display: inline;">X</a></div>
+            <%= submit_tag 'Search', class:'search-button' %>
+        </div>
+        <div class="formSuburbSurroundings">
+          <input type="checkbox" name="includeSurrounding" id="includeSurrounding" checked="checked" tabindex="2">
+          <label for="includeSurrounding">
+            Include surrounding suburbs
+          </label>
+        </div>
+        <section class="search-refinements">
+          <div class="condition property-select-holder">
+            <div class="select-holder">
+              <select class="rui-input rui-select rui-select-rendered">
+                <option value="All" selected="">All property types</option>
+                <option value="House">House</option>
+                <option value="unit apartment">Apartment &amp; Unit</option>
+                <option value="Townhouse">Townhouse</option>
+                <option value="Villa">Villa</option>
+                <option value="Land">Land</option>
+                <option value="Acreage">Acreage</option>
+                <option value="Rural">Rural</option>
+                <option value="unitblock">Block of Units</option>
+                <option value="retire">Retirement Living</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="condition bed-select-container">
+            <div class="min beds select-holder">
+              <select class="rui-input rui-select rui-select-rendered">
+                <option value="Any" data-all="Any">Min beds</option>
+                <option value="Studio">Studio</option>
+                <option value="1">1 Bed</option>
+                <option value="2">2 Beds</option>
+                <option value="3">3 Beds</option>
+                <option value="4">4 Beds</option>
+                <option value="5">5 Beds</option>
+              </select>
+            </div>
+            <div class="max beds select-holder">
+              <select class="rui-input rui-select rui-select-rendered rui-default-selected">
+                <option value="Any" data-all="Any">Max beds</option>
+                <option value="Studio">Studio</option>
+                <option value="1">1 Bed</option>
+                <option value="2">2 Beds</option>
+                <option value="3">3 Beds</option>
+                <option value="4">4 Beds</option>
+                <option value="5">5 Beds</option>
+              </select>
+            </div>
+          </div>
+          <div class="condition price-select-container">
+            <div class="min price select-holder">
+
+              <select class="rui-input rui-select rui-select-rendered rui-default-selected">
+                <option value="Any" data-all="Any">Min price</option>
+                <option value="50000">$50,000</option>
+                <option value="100000">$100,000</option>
+                <option value="150000">$150,000</option>
+                <option value="200000">$200,000</option>
+                <option value="250000">$250,000</option>
+                <option value="300000">$300,000</option>
+                <option value="350000">$350,000</option>
+                <option value="400000">$400,000</option>
+                <option value="450000">$450,000</option>
+                <option value="500000">$500,000</option>
+                <option value="550000">$550,000</option>
+                <option value="600000">$600,000</option>
+                <option value="650000">$650,000</option>
+                <option value="700000">$700,000</option>
+                <option value="750000">$750,000</option>
+                <option value="800000">$800,000</option>
+                <option value="850000">$850,000</option>
+                <option value="900000">$900,000</option>
+                <option value="950000">$950,000</option>
+                <option value="1000000">$1,000,000</option>
+                <option value="1250000">$1,250,000</option>
+                <option value="1500000">$1,500,000</option>
+                <option value="1750000">$1,750,000</option>
+                <option value="2000000">$2,000,000</option>
+                <option value="2500000">$2,500,000</option>
+                <option value="3000000">$3,000,000</option>
+                <option value="4000000">$4,000,000</option>
+                <option value="5000000">$5,000,000</option>
+                <option value="10000000">$10,000,000</option>
+              </select>
+            </div>
+            <div class="max price select-holder">
+
+              <select class="rui-input rui-select rui-select-rendered rui-default-selected">
+                <option value="Any" data-all="Any">Max price</option>
+                <option value="50000">$50,000</option>
+                <option value="100000">$100,000</option>
+                <option value="150000">$150,000</option>
+                <option value="200000">$200,000</option>
+                <option value="250000">$250,000</option>
+                <option value="300000">$300,000</option>
+                <option value="350000">$350,000</option>
+                <option value="400000">$400,000</option>
+                <option value="450000">$450,000</option>
+                <option value="500000">$500,000</option>
+                <option value="550000">$550,000</option>
+                <option value="600000">$600,000</option>
+                <option value="650000">$650,000</option>
+                <option value="700000">$700,000</option>
+                <option value="750000">$750,000</option>
+                <option value="800000">$800,000</option>
+                <option value="850000">$850,000</option>
+                <option value="900000">$900,000</option>
+                <option value="950000">$950,000</option>
+                <option value="1000000">$1,000,000</option>
+                <option value="1250000">$1,250,000</option>
+                <option value="1500000">$1,500,000</option>
+                <option value="1750000">$1,750,000</option>
+                <option value="2000000">$2,000,000</option>
+                <option value="2500000">$2,500,000</option>
+                <option value="3000000">$3,000,000</option>
+                <option value="4000000">$4,000,000</option>
+                <option value="5000000">$5,000,000</option>
+                <option value="10000000">$10,000,000</option>
+              </select>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+      <div class="browse-by-suburb-cta">
+        <div id="search-map-highlight">
+          <%= image_tag "australiamap-large.png" %>
+        </div>
+      </div>
+    </div>
+
+<% end %>

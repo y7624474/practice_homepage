@@ -1,2 +1,48 @@
-<h1>Homepage#index</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div class="header-background">
+  <%= image_tag "rea-logo-v2.png" %>
+
+
+  <%= render partial: "header" %>
+</div>
+<div class="search-form">
+  <%= render partial: "searchform" %>
+</div>
+<div class="container">
+  <%= render partial: "container" %>
+</div>
+<div class="seo-footer">
+  <div class="tab-switcher">
+    <div class="tab-group is-selected">
+      <h5 class="tab-button">Real Estate For Sale</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Houses</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Apartments</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Units</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Land</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Popular Areas</h5>
+    </div>
+    <div class="tab-group ">
+      <h5 class="tab-button">Popular Searches</h5>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <%= render partial: "footer" %>
+</div>
+</body>
+</html>

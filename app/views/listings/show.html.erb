@@ -1,0 +1,33 @@
+<div class="header-background">
+  <%= image_tag "rea-logo-v2.png" %>
+
+
+</div>
+<div class="search-result">
+  <p>
+    <strong>Name:</strong>
+    <%= @listing.name %>
+  </p>
+
+  <p>
+    <strong>Describe:</strong>
+    <%= @listing.describe %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= @listing.address %>
+  </p>
+
+  <p>
+    <strong>Beds:</strong>
+    <%= @listing.beds %>
+  </p>
+
+  <p>
+    <strong>Rooms:</strong>
+    <%= @listing.rooms %>
+  </p>
+
+  <%= link_to 'Back', homepage_index_path %>
+</div>

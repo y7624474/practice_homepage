@@ -1,0 +1,22 @@
+<%= link_to 'New listing', new_listing_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Describe</th>
+    <th>Address</th>
+    <th>Beds</th>
+    <th>Rooms</th>
+    <th colspan="5"></th>
+  </tr>
+
+  <% @listings.each do |listing| %>
+      <tr>
+        <td><%= listing.name %></td>
+        <td><%= listing.describe %></td>
+        <td><%= listing.address %></td>
+        <td><%= listing.beds %></td>
+        <td><%= listing.rooms %></td>
+        <td><%= link_to 'Show', listing_path(listing.id) %></td>
+      </tr>
+  <% end %>
+</table>

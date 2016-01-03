@@ -1,0 +1,30 @@
+// Place all the styles related to the listings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header-background {
+  background-image: url(xmas-header.png);
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-position: 50% 0;
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+.header-background img {
+  display: block;
+  width: 232px;
+  height: 42px;
+  background-size: 232px 42px;
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  margin-left: -115px;
+  z-index: 2;
+}
+
+.search-result{
+  margin-top:100px ;
+  text-align: center;
+}
